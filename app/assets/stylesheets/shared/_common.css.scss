@@ -1,0 +1,112 @@
+.opaque {
+  @include opacity(1);
+}
+.transparent {
+  @include opacity(0);
+}
+.fixed-dead-center {
+  @include translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+.body-textarea {
+  height: 240px;
+}
+.possessive:after {
+  content: "'s ";
+}
+.prespace:before {
+  content: " ";
+}
+.margin-puffed {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.pointer {
+  cursor: pointer;
+}
+.unmargined-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+.align-left {
+  text-align: left;
+}
+.bold {
+  font-weight: bold;
+}
+.colon:after {
+  content: ":";
+}
+.ellipsis:after {
+  content: "...";
+}
+.hidden {
+  display: none;
+}
+.comma:not(:last-child) {
+  &:after {
+    content: ",";
+  }
+}
+.asterick:before {
+  content: "*";
+}
+.tab {
+  margin-right: 15px; 
+}
+.dash:after {
+  content: " - ";
+}
+.spacebar:after {
+  content: " ";
+}
+.predash:before {
+  content: " - ";
+}
+.pound:after {
+  content: '#';
+}
+.ellipsis {
+  text-overflow: ellipsis;
+}
+.parantheses:after {
+  content: ")";
+}
+.parantheses:before {
+  content: "(";
+}
+.italic {
+  font-style: italic;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.upcase {
+  text-transform: uppercase;
+}
+.overflow-225 {
+  width: 225px;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+.invisible {
+  visibility: hidden;
+}
+.px42 {
+  width: 42px;
+  max-height: 42px;
+}
+.px96 {
+  width: 96px;
+  max-height: 96px;
+}
+.text-small {
+  font-size: 12px;
+}
